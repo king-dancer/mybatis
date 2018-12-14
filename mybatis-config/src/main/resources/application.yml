@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: mybatis-config
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://193.112.214.43:3306/lumia?useUnicode=true&characterEncoding=utf-8
+    username: lumia
+    password: lumia830
+server:
+  port: 2019
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  type-aliases-package: com.spring.mybatisconfig.dto
+  config-location: classpath:mybatis/mybatis-config.xml
