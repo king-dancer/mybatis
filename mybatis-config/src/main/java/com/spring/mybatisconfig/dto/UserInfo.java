@@ -1,5 +1,9 @@
 package com.spring.mybatisconfig.dto;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 public class UserInfo {
     private Long id;
 
@@ -12,6 +16,18 @@ public class UserInfo {
     private String email;
 
     private String name;
+
+    public UserInfo() {
+    }
+
+    public UserInfo(Long id, String username, String pwd, String mobile, String email, String name) {
+        this.id = id;
+        this.username = username;
+        this.pwd = pwd;
+        this.mobile = mobile;
+        this.email = email;
+        this.name = name;
+    }
 
     public Long getId() {
         return id;
@@ -26,7 +42,7 @@ public class UserInfo {
     }
 
     public void setUsername(String username) {
-        this.username = username == null ? null : username.trim();
+        this.username = username;
     }
 
     public String getPwd() {
@@ -34,7 +50,7 @@ public class UserInfo {
     }
 
     public void setPwd(String pwd) {
-        this.pwd = pwd == null ? null : pwd.trim();
+        this.pwd = pwd;
     }
 
     public String getMobile() {
@@ -42,7 +58,7 @@ public class UserInfo {
     }
 
     public void setMobile(String mobile) {
-        this.mobile = mobile == null ? null : mobile.trim();
+        this.mobile = mobile;
     }
 
     public String getEmail() {
@@ -50,7 +66,7 @@ public class UserInfo {
     }
 
     public void setEmail(String email) {
-        this.email = email == null ? null : email.trim();
+        this.email = email;
     }
 
     public String getName() {
@@ -58,6 +74,6 @@ public class UserInfo {
     }
 
     public void setName(String name) {
-        this.name = name == null ? null : name.trim();
+        this.name = name;
     }
 }
