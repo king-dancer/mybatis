@@ -1,4 +1,4 @@
-package com.spring.mybatisconfig.dto;
+package com.spring.jpa.repository.model;
 
 public class UserInfo {
     private Long id;

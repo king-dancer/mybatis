@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/jpa/jpa.iml" filepath="$PROJECT_DIR$/jpa/jpa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jpa_main.iml" filepath="$PROJECT_DIR$/.idea/modules/jpa_main.iml" group="jpa" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jpa_test.iml" filepath="$PROJECT_DIR$/.idea/modules/jpa_test.iml" group="jpa" />
       <module fileurl="file://$PROJECT_DIR$/.idea/mybatis.iml" filepath="$PROJECT_DIR$/.idea/mybatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/mybatis-config.iml" filepath="$PROJECT_DIR$/.idea/modules/mybatis-config.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/mybatis-config_main.iml" filepath="$PROJECT_DIR$/.idea/modules/mybatis-config_main.iml" group="mybatis-config" />

@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: jpa
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://193.112.214.43:3306/lumia?useUnicode=true&characterEncoding=utf-8
+    username: lumia
+    password: lumia830
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+server:
+  port: 2018
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  type-aliases-package: com.spring.jpa.repository.model
+# mybatis 打印sql
+logging:
+  level:
+    com.spring.jpa.repository.mapper: debug
