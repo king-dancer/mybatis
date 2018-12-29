@@ -15,4 +15,5 @@ public class UserInfoService {
     public List<com.spring.jpa.repository.model.UserInfo> getUserInfo(UserInfo userInfo){
         return userInfoRepository.getUserInfoByEveryOne(userInfo);
     }
+
 }

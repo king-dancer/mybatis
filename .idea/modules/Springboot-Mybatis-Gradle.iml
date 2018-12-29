@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="Springboot-Mybatis-Gradle" external.linked.project.path="$MODULE_DIR$/../../Springboot-Mybatis-Gradle" external.root.project.path="$MODULE_DIR$/../../Springboot-Mybatis-Gradle" external.system.id="GRADLE" external.system.module.group="com.cc" external.system.module.version="1.0-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../Springboot-Mybatis-Gradle">
+      <excludeFolder url="file://$MODULE_DIR$/../../Springboot-Mybatis-Gradle/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../Springboot-Mybatis-Gradle/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../Springboot-Mybatis-Gradle/out" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

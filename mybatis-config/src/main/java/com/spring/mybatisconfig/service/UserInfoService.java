@@ -19,4 +19,8 @@ public class UserInfoService {
         criteria.andUsernameEqualTo(userName);
         return userInfoMapper.selectByExample(userInfoExample);
     }
+
+    public List<UserInfo> page(){
+        return userInfoMapper.selectByExample(null);
+    }
 }

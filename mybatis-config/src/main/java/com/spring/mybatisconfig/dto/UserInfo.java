@@ -1,5 +1,8 @@
 package com.spring.mybatisconfig.dto;
 
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
 public class UserInfo {
     private Long id;
 

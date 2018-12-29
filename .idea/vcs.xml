@@ -3,5 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Springboot-Mybatis-Gradle" vcs="Git" />
+    <mapping directory="D:\2019\idea\mybatis\Springboot-Mybatis-Gradle" vcs="Git" />
   </component>
 </project>
