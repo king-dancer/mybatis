@@ -5,10 +5,14 @@
       <profile default="true" name="Default" enabled="true" />
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="activiti_main" target="1.8" />
+      <module name="activiti_test" target="1.8" />
       <module name="jpa_main" target="1.8" />
       <module name="jpa_test" target="1.8" />
       <module name="mybatis-config_main" target="1.8" />
       <module name="mybatis-config_test" target="1.8" />
+      <module name="Springboot-Mybatis-Gradle_main" target="1.8" />
+      <module name="Springboot-Mybatis-Gradle_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

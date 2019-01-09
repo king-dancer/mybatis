@@ -5,6 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Springboot-Mybatis-Gradle.iml" filepath="$PROJECT_DIR$/.idea/modules/Springboot-Mybatis-Gradle.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Springboot-Mybatis-Gradle_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Springboot-Mybatis-Gradle_main.iml" group="Springboot-Mybatis-Gradle" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Springboot-Mybatis-Gradle_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Springboot-Mybatis-Gradle_test.iml" group="Springboot-Mybatis-Gradle" />
+      <module fileurl="file://$PROJECT_DIR$/activiti/activiti.iml" filepath="$PROJECT_DIR$/activiti/activiti.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/activiti_main.iml" filepath="$PROJECT_DIR$/.idea/modules/activiti_main.iml" group="activiti" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/activiti_test.iml" filepath="$PROJECT_DIR$/.idea/modules/activiti_test.iml" group="activiti" />
       <module fileurl="file://$PROJECT_DIR$/jpa/jpa.iml" filepath="$PROJECT_DIR$/jpa/jpa.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/jpa_main.iml" filepath="$PROJECT_DIR$/.idea/modules/jpa_main.iml" group="jpa" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/jpa_test.iml" filepath="$PROJECT_DIR$/.idea/modules/jpa_test.iml" group="jpa" />
