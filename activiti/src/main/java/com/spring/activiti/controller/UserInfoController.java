@@ -1,6 +1,7 @@
 package com.spring.activiti.controller;
 
 import com.spring.activiti.service.UserInfoService;
+import com.wordnik.swagger.annotations.ApiOperation;
 import org.activiti.engine.RuntimeService;
 import org.activiti.engine.TaskService;
 import org.activiti.engine.impl.persistence.entity.ExecutionEntity;
@@ -29,6 +30,7 @@ public class UserInfoController {
         return userInfoService.getUserInfo();
     }
 
+    @ApiOperation(value = "开始一个任务",notes = "根据业务编号开启一个任务")
     @GetMapping("/apply/{businessKey}")
     public Object apply(@PathVariable("businessKey") String businessKey){
         Map<String,Object> map = new HashMap<>();
@@ -38,6 +40,7 @@ public class UserInfoController {
 
         return executionEntity.getId();
     }
+    @ApiOperation(value = "处理任务",notes = "根据业务编号处理任务")
     @GetMapping("/deal/{businessKey}")
     public Object deal(@PathVariable("businessKey") String businessKey){
         Map<String,Object> map = new HashMap<>();
@@ -47,7 +50,7 @@ public class UserInfoController {
         taskService.complete(task.getId(),map);
         return "success";
     }
-
+    @ApiOperation(value = "审批任务",notes = "根据业务编号审批任务")
     @GetMapping("/passApprove/{businesskey}")
     public Object passApprove(@PathVariable("businesskey") String businesskey){
         Map<String,Object> map = new HashMap<>();

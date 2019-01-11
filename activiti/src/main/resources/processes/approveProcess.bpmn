@@ -3,7 +3,15 @@
   <process id="testprocess" isClosed="false" isExecutable="true" processType="None">
     <startEvent id="_2"/>
     <userTask activiti:assignee="${apply}" activiti:exclusive="true" id="application" name="申请"/>
-    <userTask activiti:assignee="${approve}" activiti:exclusive="true" id="approve" name="审批"/>
+    <userTask activiti:assignee="${approve}" activiti:exclusive="true" id="approve" name="审批">
+      <extensionElements>
+        <activiti:taskListener class="com.spring.activiti.listener.ApproveListener" event="create">
+          <activiti:field name="expression">
+            <activiti:string/>
+          </activiti:field>
+        </activiti:taskListener>
+      </extensionElements>
+    </userTask>
     <endEvent id="_5"/>
     <exclusiveGateway gatewayDirection="Unspecified" id="_6"/>
     <sequenceFlow id="_7" sourceRef="_2" targetRef="application"/>
