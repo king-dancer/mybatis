@@ -1,0 +1,168 @@
+1、JSch开发包下载
+
+     http://www.jcraft.com/jsch/
+     目前最新版本为：jsch-0.1.51
+
+2、简单例子，列出指定目录下的文件列表
+import java.util.Properties;
+import java.util.Vector;
+
+import com.jcraft.jsch.ChannelSftp;
+import com.jcraft.jsch.JSch;
+import com.jcraft.jsch.Session;
+
+public class Demo003 {
+
+    /**
+     * @param args
+     */
+    public static void main(String[] args) throws Exception{
+        JSch jsch = new JSch();
+
+        Session session = jsch.getSession("cmb", "localhost");
+        session.setPassword("cmb123");
+        Properties config = new Properties();
+        config.put("StrictHostKeyChecking", "no");
+        session.setConfig(config);
+        session.connect();
+
+        ChannelSftp channelSftp = (ChannelSftp)session.openChannel("sftp");
+        channelSftp.connect();
+        channelSftp.setFilenameEncoding("gbk");
+
+        Vector vector  = channelSftp.ls("/");
+        try{
+            for(Object obj :vector){
+                if(obj instanceof com.jcraft.jsch.ChannelSftp.LsEntry){
+                    String fileName = ((com.jcraft.jsch.ChannelSftp.LsEntry)obj).getFilename();
+                    System.out.println(fileName);
+                }
+            }
+        }
+        finally{
+            channelSftp.quit();
+            session.disconnect();
+        }
+    }
+
+}
+
+3、JSch实现SFTP功能一些主要类的介绍
+1)JSch 类
+
+2）Session 会话对象类
+
+3）ChannelSFTP类
+ChannelSFTP类是JSch实现SFTP核心类，它提供了一些SFTP常见的操作方法，如下
+
+方法名	方法说明
+put()   	文件上传
+get() 	文件下载
+cd()
+进入指定目录
+ls()
+得到指定目录下的文件列表
+rename()
+重命名（移动）指定文件或目录
+rm()
+删除指定文件
+mkdir()
+创建目录
+rmdir()
+删除目录（只允许删除空目录）
+
+注：以上这些方法都有很多重载方法
+
+4）SftpProgressMonitor 传输进度监控类
+
+
+5）LsEntry 可以认为是文件服务器上的文件条目信息，把包含文件或者目录相关属性 。ls命令返回的Vector中的就是LsEntry对象列表
+
+
+
+
+4、SFTP文件传输的实现步骤
+
+
+      //1、创建JSch类，好比是FlashFXP工具
+   JSch jsch = new JSch();
+
+   //2、创建本次的文件传输会话对象，并连接到SFTP服务器。它好比是通过FlashFXP工具连接到SFTP服务器
+   session = jsch.getSession(username, host, port);
+   session.setPassword(passwd);
+   Properties config = new Properties();
+   config.put("StrictHostKeyChecking", "no");
+   session.setConfig(config);
+   session.connect();
+   try{
+   //3、在该session会话中开启一个SFTP通道，之后就可以在该通道中进行文件传输了
+       channelSftp = (ChannelSftp)session.openChannel("sftp");
+       channelSftp.connect();
+   }catch(Exception e){
+       e.printStackTrace();
+       disConnect();
+       throw e;
+   }
+
+   //4、进行文件传输操作：put()、get()....
+   channelSftp.put(...)
+
+   //5、操作完毕后，关闭通道并退出本次会话
+   if(channelSftp!=null && channelSftp.isConnected()){
+        channelSftp.disconnect();
+   }
+
+   if(session!=null && session.isConnected()){
+        session.disconnect();
+   }
+
+
+
+
+
+5、JSch中文乱码处理
+     使用jsch-0.1.51进行SFTP文件传输时，对中文处理会出现乱码，并且也无法通过setFileNameEncoding()方法来设置编码。
+     解决方案：
+         下载jsch-0.1.51源代码，在ChannelSFTP.java文件中找到SENDINIT( )方法，修改红色部分的内容
+           private void sendINIT() throws Exception {
+    this.packet.reset();
+    putHEAD((byte)1, 5);
+    this.buf.putInt(3);   //修改为  this.buf.putInt(2);
+    getSession().write(this.packet, this, 9);
+  }
+
+然后编译并更改jar中的对应class文件即可。
+
+
+
+6、ChannelSftp类的主要API说明如下：
+
+
+
+
+
+
+
+方法名	方法说明
+public void put(String src, String dst)	将本地文件名为src的文件上传到目标服务器，目标文件名为dst，若dst为目录，则目标文件名将与src文件名相同。采用默认的传输模式：OVERWRITE
+public void put(String src, String dst, int mode)	将本地文件名为src的文件上传到目标服务器，目标文件名为dst，若dst为目录，则目标文件名将与src文件名相同。指定文件传输模式为mode（mode可选值为：ChannelSftp.OVERWRITE，ChannelSftp.RESUME，ChannelSftp.APPEND）。
+public void put(String src, String dst, SftpProgressMonitor monitor)	将本地文件名为src的文件上传到目标服务器，目标文件名为dst，若dst为目录，则目标文件名将与src文件名相同。采用默认的传输模式：OVERWRITE，并使用实现了SftpProgressMonitor接口的monitor对象来监控文件传输的进度。
+public void put(String src, String dst,SftpProgressMonitor monitor, int mode) 	将本地文件名为src的文件上传到目标服务器，目标文件名为dst，若dst为目录，则目标文件名将与src文件名相同。指定传输模式为mode,并使用实现了SftpProgressMonitor接口的monitor对象来监控文件传输的进度。
+public void put(InputStream src, String dst)	将本地的input stream对象src上传到目标服务器，目标文件名为dst，dst不能为目录。采用默认的传输模式：OVERWRITE
+public void put(InputStream src, String dst, int mode)	将本地的input stream对象src上传到目标服务器，目标文件名为dst，dst不能为目录。指定文件传输模式为mode
+public void put(InputStream src, String dst, SftpProgressMonitor monitor)	将本地的input stream对象src上传到目标服务器，目标文件名为dst，dst不能为目录。采用默认的传输模式：OVERWRITE。并使用实现了SftpProgressMonitor接口的monitor对象来监控传输的进度。
+public void put(InputStream src, String dst,SftpProgressMonitor monitor, int mode) 	将本地的input stream对象src上传到目标服务器，目标文件名为dst，dst不能为目录。指定文件传输模式为mode。并使用实现了SftpProgressMonitor接口的monitor对象来监控传输的进度。
+public OutputStream put(String dst)	该方法返回一个输出流，可以向该输出流中写入数据，最终将数据传输到目标服务器，目标文件名为dst，dst不能为目录。采用默认的传输模式：OVERWRITE
+public OutputStream put(String dst, final int mode)	该方法返回一个输出流，可以向该输出流中写入数据，最终将数据传输到目标服务器，目标文件名为dst，dst不能为目录。指定文件传输模式为mode
+public OutputStream put(String dst, final SftpProgressMonitor monitor, final int mode) 	该方法返回一个输出流，可以向该输出流中写入数据，最终将数据传输到目标服务器，目标文件名为dst，dst不能为目录。指定文件传输模式为mode。并使用实现了SftpProgressMonitor接口的monitor对象来监控传输的进度。
+public OutputStream put(String dst, final SftpProgressMonitor monitor, final int mode, long offset)	该方法返回一个输出流，可以向该输出流中写入数据，最终将数据传输到目标服务器，目标文件名为dst，dst不能为目录。指定文件传输模式为mode。并使用实现了SftpProgressMonitor接口的monitor对象来监控传输的进度。offset指定了一个偏移量，从输出流偏移offset开始写入数据。
+get(String src, String dst)	下载文件到本地，src为目标服务器上的文件，不能为目录，dst为本地文件路径。若dst为目录，则本地文件名与目标服务器上的文件名一样。
+get(String src, String dst ,SftpProgressMonitor monitor)	同get(String src, String dst)，只是该方法允许传入传输进度的监控对象monitor。
+get(String src, String dst ,SftpProgressMonitor monitor ,int mode)	同get(String src, String dst ,SftpProgressMonitor monitor)，同时，该方法增加了mode参数，允许指定文件传输模式
+rm(String path)	删除文件，path不能为目录，删除目录使用rmdir
+rmdir(String path)	删除目录，但是只能删除空目录
+rename(String oldpath, String newpath)	如果oldPath为目录，不要求目录必须为空
+如果newpath为目录，则newpath必须不能存在，如果已经存在该目录，则会出现重名或者移动失败
+1、重命名文件或者目录
+2、移动文件或者目录
+ls(String path)	列出指定目录下的所有文件和子目录。该方法返回Vector对象，该列表具体存放的是LsEntry对象

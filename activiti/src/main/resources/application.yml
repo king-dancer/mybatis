@@ -1,9 +1,13 @@
 spring:
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
   application:
     name: activiti
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://193.112.214.43:3306/lumia?useUnicode=true&characterEncoding=utf-8
+    #serverTimezone=GMT%2B8 解决数据库时区差问题  或等于  Asia/Shanghai
+    url: jdbc:mysql://193.112.214.43:3306/lumia?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8
     username: lumia
     password: lumia830
 server:
@@ -11,6 +15,9 @@ server:
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   type-aliases-package: com.spring.activiti.dto
+#配置spring boot打印日志
 logging:
   level:
     com.spring.activiti: debug
+  #指定日志目录
+  path: ${LOG_PATH:logs}
