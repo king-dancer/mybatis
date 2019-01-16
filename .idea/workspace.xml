@@ -2,26 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72cadd67-d082-40a3-be90-2a5ef4ae0f0a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_wordnik_swagger_annotations_1_5_3_M1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_wordnik_swagger_models_1_5_3_M1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_springfox_springfox_core_2_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_springfox_springfox_schema_2_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_springfox_springfox_spi_2_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_springfox_springfox_spring_web_2_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_springfox_springfox_swagger2_2_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_springfox_springfox_swagger_common_2_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_springfox_springfox_swagger_ui_2_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_mapstruct_mapstruct_1_0_0_Beta4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_hateoas_spring_hateoas_0_25_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activiti/src/main/java/com/spring/activiti/Swagger2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/activiti/src/main/java/com/spring/activiti/listener/ApproveListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jcraft_jsch_0_1_55.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/activiti/src/main/java/com/spring/activiti/util/Demo003.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/activiti/test" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/activiti_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/activiti_main.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/activiti_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/activiti_test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/activiti/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activiti/src/main/java/com/spring/activiti/controller/UserInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/src/main/java/com/spring/activiti/controller/UserInfoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/activiti/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activiti/src/main/resources/processes/approveProcess.bpmn" beforeDir="false" afterPath="$PROJECT_DIR$/activiti/src/main/resources/processes/approveProcess.bpmn" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/mybatis-config/.gradle/" />
     <ignored path="$PROJECT_DIR$/mybatis-config/build/" />
@@ -97,6 +85,12 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="activiti" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="activiti" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="other" type="c8890929:TasksNode$1" />
               </path>
             </expand>
@@ -114,14 +108,14 @@
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="2" />
-          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.12" value="2" />
           <entry key="project.open.time.13" value="2" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="3" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="15" />
+          <entry key="project.opened" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -132,23 +126,23 @@
           <entry key="Eclipse" value="1" />
           <entry key="Groovy" value="19" />
           <entry key="Image" value="6" />
-          <entry key="JAVA" value="104" />
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="JAVA" value="111" />
+          <entry key="PLAIN_TEXT" value="2" />
           <entry key="SQL" value="2" />
           <entry key="Scratch" value="3" />
           <entry key="UML" value="5" />
           <entry key="XML" value="29" />
-          <entry key="YAML" value="12" />
+          <entry key="YAML" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Groovy" value="468" />
-          <entry key="JAVA" value="4771" />
+          <entry key="Groovy" value="469" />
+          <entry key="JAVA" value="5118" />
           <entry key="PLAIN_TEXT" value="5" />
           <entry key="Scratch" value="299" />
           <entry key="XML" value="75" />
-          <entry key="YAML" value="406" />
+          <entry key="YAML" value="566" />
         </counts>
       </usages-collector>
     </session>
@@ -158,7 +152,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/activiti/src/main/java/com/spring/activiti/ActivitiApplication.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="76">
@@ -170,8 +164,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/activiti/src/main/java/com/spring/activiti/controller/UserInfoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="703">
-              <caret line="52" column="52" selection-start-line="52" selection-start-column="52" selection-end-line="52" selection-end-column="52" />
+            <state relative-caret-position="297">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -180,14 +174,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/activiti/src/main/resources/processes/approveProcess.bpmn">
-          <provider selected="true" editor-type-id="bpmn-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/activiti/src/main/java/com/spring/activiti/listener/ApproveListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
+            <state relative-caret-position="285">
               <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -199,19 +188,64 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/activiti/build.gradle">
+        <entry file="file://$PROJECT_DIR$/activiti/src/main/java/com/spring/activiti/mapper/UserInfoMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="817">
-              <caret line="43" column="59" selection-start-line="43" selection-start-column="59" selection-end-line="43" selection-end-column="59" />
+            <state relative-caret-position="76">
+              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/activiti/src/main/java/com/spring/activiti/service/UserInfoService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/activiti/src/main/java/com/spring/activiti/util/Demo003.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/activiti/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/activiti/src/main/java/com/spring/activiti/Swagger2.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="76">
               <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/activiti/src/main/java/com/spring/activiti/dto/UserInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/activiti/src/main/java/com/spring/activiti/dto/UserInfoExample.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-152">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -1100,9 +1134,9 @@
         <entry key="$PROJECT_DIR$/Springboot-Mybatis-Gradle/build.gradle" value="1295387085" />
         <entry key="$PROJECT_DIR$/Springboot-Mybatis-Gradle/gradle/wrapper/gradle-wrapper.properties" value="761105753" />
         <entry key="$PROJECT_DIR$/Springboot-Mybatis-Gradle/settings.gradle" value="976899726" />
-        <entry key="$PROJECT_DIR$/activiti" value="6186634483851" />
+        <entry key="$PROJECT_DIR$/activiti" value="6186653823708" />
         <entry key="$PROJECT_DIR$/activiti/.gradle" value="0" />
-        <entry key="$PROJECT_DIR$/activiti/build.gradle" value="3429240187" />
+        <entry key="$PROJECT_DIR$/activiti/build.gradle" value="2876650620" />
         <entry key="$PROJECT_DIR$/activiti/gradle/wrapper/gradle-wrapper.properties" value="2290625707" />
         <entry key="$PROJECT_DIR$/activiti/settings.gradle" value="3509619902" />
         <entry key="$PROJECT_DIR$/jpa" value="6183288176381" />
@@ -1641,13 +1675,15 @@
         <option value="$PROJECT_DIR$/activiti/src/main/java/com/spring/activiti/ActivitiApplication.java" />
         <option value="$PROJECT_DIR$/activiti/src/main/resources/processes/test.xml" />
         <option value="$PROJECT_DIR$/activiti/src/main/resources/processes/test.bpmn" />
-        <option value="$PROJECT_DIR$/activiti/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/activiti/src/main/resources/processes/approveProcess.xml" />
         <option value="$PROJECT_DIR$/activiti/src/main/resources/processes/approveProcess.bpmn" />
         <option value="$PROJECT_DIR$/activiti/src/main/java/com/spring/activiti/listener/ApproveListener.java" />
-        <option value="$PROJECT_DIR$/activiti/build.gradle" />
         <option value="$PROJECT_DIR$/activiti/src/main/java/com/spring/activiti/controller/UserInfoController.java" />
         <option value="$PROJECT_DIR$/activiti/src/main/java/com/spring/activiti/Swagger2.java" />
+        <option value="$PROJECT_DIR$/activiti/build.gradle" />
+        <option value="$PROJECT_DIR$/activiti/test" />
+        <option value="$PROJECT_DIR$/activiti/src/main/java/com/spring/activiti/util/Demo003.java" />
+        <option value="$PROJECT_DIR$/activiti/src/main/resources/application.yml" />
       </list>
     </option>
   </component>
@@ -1728,6 +1764,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -1759,39 +1796,17 @@
               <item name="activiti" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="activiti" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="activiti" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="activiti" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mybatis" type="b2602c69:ProjectViewProjectNode" />
               <item name="mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="activiti" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="processes" type="462c0819:PsiDirectoryNode" />
+              <item name="logs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -1799,9 +1814,9 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547187531016" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547626586770" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="D:/dev/2019/cpms/cpms" />
+    <property name="last_opened_file_path" value="D:/dev/2019/cpms" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -1834,7 +1849,56 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ActivitiApplication">
+  <component name="RunManager" selected="Gradle.activiti [build]">
+    <configuration name="Demo003" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.spring.activiti.util.Demo003" />
+      <module name="activiti_main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spring.activiti.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="activiti [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/activiti" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="activiti [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/activiti" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method v="2" />
+    </configuration>
     <configuration name="activiti [mybatisGenerate]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -1871,56 +1935,6 @@
       </ExternalSystemSettings>
       <method v="2" />
     </configuration>
-    <configuration name="mybatis-config [mybatisGenerate]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/mybatis-config" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="mybatisGenerate" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <method v="2" />
-    </configuration>
-    <configuration name="UserInfoControllerGroovy.getUserInfoByUserName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis-config_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.spring.mybatisconfig.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.spring.mybatisconfig.service" />
-      <option name="MAIN_CLASS_NAME" value="com.spring.mybatisconfig.service.UserInfoControllerGroovy" />
-      <option name="METHOD_NAME" value="getUserInfoByUserName" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserInfoServiceGroovy.getUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis-config_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.spring.mybatisconfig.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.spring.mybatisconfig.service" />
-      <option name="MAIN_CLASS_NAME" value="com.spring.mybatisconfig.service.UserInfoServiceGroovy" />
-      <option name="METHOD_NAME" value="getUser" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ActivitiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="activiti_main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.spring.activiti.ActivitiApplication" />
@@ -1954,19 +1968,19 @@
       <item itemvalue="Spring Boot.JpaApplication" />
       <item itemvalue="Spring Boot.StartApp" />
       <item itemvalue="Spring Boot.ActivitiApplication" />
-      <item itemvalue="JUnit.UserInfoControllerGroovy.getUserInfoByUserName" />
-      <item itemvalue="JUnit.UserInfoServiceGroovy.getUser" />
-      <item itemvalue="Gradle.mybatis-config [mybatisGenerate]" />
       <item itemvalue="Gradle.jpa [mybatisGenerate]" />
       <item itemvalue="Gradle.activiti [mybatisGenerate]" />
+      <item itemvalue="Application.Demo003" />
+      <item itemvalue="Gradle.activiti [jar]" />
+      <item itemvalue="Gradle.activiti [build]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.activiti [build]" />
+        <item itemvalue="Gradle.activiti [jar]" />
+        <item itemvalue="Application.Demo003" />
         <item itemvalue="Gradle.activiti [mybatisGenerate]" />
         <item itemvalue="Gradle.jpa [mybatisGenerate]" />
-        <item itemvalue="Gradle.mybatis-config [mybatisGenerate]" />
-        <item itemvalue="JUnit.UserInfoServiceGroovy.getUser" />
-        <item itemvalue="JUnit.UserInfoControllerGroovy.getUserInfoByUserName" />
       </list>
     </recent_temporary>
   </component>
@@ -1995,6 +2009,7 @@
       <workItem from="1546504361377" duration="13650000" />
       <workItem from="1546911224283" duration="11279000" />
       <workItem from="1547187564034" duration="303000" />
+      <workItem from="1547188028365" duration="15111000" />
     </task>
     <servers />
   </component>
@@ -2031,7 +2046,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100422000" />
+    <option name="totallyTimeSpent" value="115533000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2044,8 +2059,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989154" visible="true" weight="0.21493334" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989154" visible="true" weight="0.21706666" />
       <window_info id="Structure" order="1" sideWeight="0.5010846" side_tool="true" weight="0.2496" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -2056,7 +2072,7 @@
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.329718" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49973333" weight="0.329718" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49973333" visible="true" weight="0.329718" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.32104123" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -2075,7 +2091,7 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Mybatis datasource" order="5" side_tool="true" weight="0.3296" />
       <window_info anchor="right" id="Maven Projects" order="6" weight="0.3296" />
-      <window_info anchor="right" id="Gradle" order="7" weight="0.30133334" />
+      <window_info anchor="right" id="Gradle" order="7" visible="true" weight="0.30133334" />
       <window_info anchor="right" id="Database" order="8" weight="0.2352" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info anchor="right" id="Theme Preview" order="10" />
@@ -2093,11 +2109,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Springboot-Mybatis-Gradle/src/main/java/com/cc/entity/Item.java" />
-    <entry file="file://$PROJECT_DIR$/Springboot-Mybatis-Gradle/src/main/java/com/cc/entity/ImageExample.java" />
-    <entry file="file://$PROJECT_DIR$/Springboot-Mybatis-Gradle/src/main/java/com/cc/entity/Image.java" />
-    <entry file="file://$PROJECT_DIR$/Springboot-Mybatis-Gradle/src/main/java/com/cc/entity/User.java" />
-    <entry file="file://$PROJECT_DIR$/Springboot-Mybatis-Gradle/src/main/java/com/cc/dao/ImageMapper.java" />
     <entry file="file://$PROJECT_DIR$/Springboot-Mybatis-Gradle/src/main/java/com/cc/dao/ImageMapper.xml" />
     <entry file="file://$PROJECT_DIR$/Springboot-Mybatis-Gradle/src/main/java/com/cc/dao/ItemMapper.java" />
     <entry file="file://$PROJECT_DIR$/Springboot-Mybatis-Gradle/src/main/java/com/cc/dao/ItemMapper.xml" />
@@ -2155,13 +2166,6 @@
     <entry file="file://$PROJECT_DIR$/activiti/src/main/resources/mapper/UserInfoMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-798" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/activiti/src/main/java/com/spring/activiti/mapper/UserInfoMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mybatis-config/src/main/java/com/spring/mybatisconfig/MybatisConfigApplication.java">
@@ -2266,25 +2270,18 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/activiti/src/main/resources/processes/test.xml">
-      <provider editor-type-id="bpmn-editor" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1292">
           <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
         </state>
       </provider>
       <provider editor-type-id="com.intellij.jboss.jbpm.chart.editor.BpmnDesignerFileEditorProvider" />
+      <provider editor-type-id="bpmn-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/mybatis-config/src/main/java/com/spring/mybatisconfig/service/UserInfoService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="23" column="52" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/activiti/src/main/java/com/spring/activiti/service/UserInfoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="18" column="13" selection-start-line="17" selection-start-column="10" selection-end-line="18" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -2299,13 +2296,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="406">
           <caret line="34" column="25" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/activiti/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="14" lean-forward="true" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -2361,35 +2351,53 @@
     <entry file="file://$PROJECT_DIR$/activiti/src/main/resources/processes/approveProcess.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/activiti/src/main/java/com/spring/activiti/ActivitiApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/activiti/src/main/java/com/spring/activiti/controller/UserInfoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="52" column="52" selection-start-line="52" selection-start-column="52" selection-end-line="52" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/activiti/src/main/resources/processes/approveProcess.bpmn">
-      <provider selected="true" editor-type-id="bpmn-editor" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="6" column="94" selection-start-line="6" selection-start-column="94" selection-end-line="6" selection-end-column="94" />
         </state>
       </provider>
       <provider editor-type-id="com.intellij.jboss.jbpm.chart.editor.BpmnDesignerFileEditorProvider" />
+      <provider selected="true" editor-type-id="bpmn-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/activiti/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="47" column="64" selection-start-line="47" selection-start-column="64" selection-end-line="47" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/activiti/test">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="44" column="9" lean-forward="true" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/activiti/src/main/java/com/spring/activiti/Swagger2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/activiti/src/main/java/com/spring/activiti/dto/UserInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/activiti/src/main/java/com/spring/activiti/dto/UserInfoExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-152">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/activiti/src/main/java/com/spring/activiti/listener/ApproveListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
+        <state relative-caret-position="285">
           <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -2399,17 +2407,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/activiti/build.gradle">
+    <entry file="file://$PROJECT_DIR$/activiti/src/main/java/com/spring/activiti/mapper/UserInfoMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
-          <caret line="43" column="59" selection-start-line="43" selection-start-column="59" selection-end-line="43" selection-end-column="59" />
+        <state relative-caret-position="76">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/activiti/src/main/java/com/spring/activiti/Swagger2.java">
+    <entry file="file://$PROJECT_DIR$/activiti/src/main/java/com/spring/activiti/service/UserInfoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/java/gradle-4.9/caches/modules-2/files-2.1/com.jcraft/jsch/0.1.55/1ed25a5ba2c0bbe14bae93817b76a246e622efd7/jsch-0.1.55-sources.jar!/com/jcraft/jsch/Session.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="35" column="40" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/activiti/src/main/java/com/spring/activiti/controller/UserInfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/activiti/src/main/java/com/spring/activiti/util/Demo003.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/activiti/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/activiti/src/main/java/com/spring/activiti/ActivitiApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
-          <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
         </state>
       </provider>
     </entry>
